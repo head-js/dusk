@@ -3,17 +3,35 @@ import routes from './src/routes';
 
 
 export default defineConfig({
+  history: { type: 'hash' },
+
   model: {},
 
   initialState: {},
 
   clientLoader: {},
 
-  request: {},
+  routes,
+
+  // request: {},
 
   // access: {},
 
-  // antd: {},
+  antd: {},
 
-  routes,
+  // // https://github.com/ant-design/ant-design/issues/37423
+  // theme: {
+  //   'primary-color-hover': '#1890ff',
+  //   'primary-color': '#40a9ff',
+  // },
+
+  // layout: {
+  //   title: '@umijs/max',
+  // },
+
+  postcssLoader: {
+    plugins: {
+      tailwindcss: {},
+    },
+  },
 });

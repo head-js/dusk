@@ -8,8 +8,26 @@
     "setup": "max setup"
   },
   "dependencies": {
-    "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "@ant-design/icons": "5.5.2",
+    "@head.js/snippet": "0.5.9",
+    "@head/edge": "0.4.1",
+    "@tailwindcss/typography": "0.5.9",
+    "antd": "5.22.7",
+    "ast-types": "0.15.2",
+    "daisyui": "2.50.2",
+    "estraverse": "5.3.0",
+    "jotai": "2.2.3",
+    "qs": "6.10.4",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "react-router": "6.21.3",
+    "react-router-dom": "6.21.3",
+    "recast": "0.21.5",
+    "rxjs": "7.5.7",
+    "tailwindcss": "3.2.7",
+    "use-constant": "1.1.1",
+    "vanilla.js": "0.2.11",
+    "zustand": "4.3.9"
   },
   "devDependencies": {
     "@types/node": "22.17.2",

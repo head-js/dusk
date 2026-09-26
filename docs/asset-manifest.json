@@ -1,5 +1,11 @@
 {
-  "umi.css": "umi.css",
-  "umi.js": "umi.js",
-  "p__home__index.js": "p__home__index.async.js"
+  "umi.css": "umi.07525.css",
+  "umi.js": "umi.07525.js",
+  "p__home__index.js": "p__home__index.80bb6.js",
+  "p__page-v1__index.js": "p__page-v1__index.a71c0.js",
+  "p-dummy-F7QzWBzF.js": "p-dummy-F7QzWBzF.fe875.js",
+  "p-composer-na3w8hpF.js": "p-composer-na3w8hpF.48624.js",
+  "c-dummyimage-wDk3dk3g.js": "c-dummyimage-wDk3dk3g.e1f04.js",
+  "vendors-node_modules_pnpm_antd_5_22_7_date-fns_2_30_0_moment_2_31_0_react-dom_18_3_1_react_18-e549d2.9b0a9.js": "vendors-node_modules_pnpm_antd_5_22_7_date-fns_2_30_0_moment_2_31_0_react-dom_18_3_1_react_18-e549d2.9b0a9.js",
+  "vendors-node_modules_pnpm_antd_5_22_7_date-fns_2_30_0_moment_2_31_0_react-dom_18_3_1_react_18-e2b450.18cba.js": "vendors-node_modules_pnpm_antd_5_22_7_date-fns_2_30_0_moment_2_31_0_react-dom_18_3_1_react_18-e2b450.18cba.js"
 }

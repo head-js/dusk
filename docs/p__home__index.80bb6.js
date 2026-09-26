@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_head_dusk_docs=self.webpackChunk_head_dusk_docs||[]).push([["p__home__index"],{"./src/pages/home/index.jsx":function(e,s,n){n.r(s),n.d(s,{default:function(){return u}});var d=n("./node_modules/.pnpm/react@18.3.1/node_modules/react/jsx-runtime.js");function u(){return(0,d.jsx)("h1",{children:"Hello Host App"})}}}]);
