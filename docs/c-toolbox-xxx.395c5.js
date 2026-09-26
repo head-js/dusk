@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_head_dusk_docs=self.webpackChunk_head_dusk_docs||[]).push([["c-toolbox-xxx"],{"./src/container-factory/c-toolbox-xxx/index.tsx":function(e,o,n){n.r(o),n.d(o,{default:function(){return s}});var c=n("./node_modules/.pnpm/react@18.3.1/node_modules/react/jsx-runtime.js");function s(){return(0,c.jsx)("div",{children:"Toolbox"})}}}]);

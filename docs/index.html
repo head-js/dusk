@@ -4,11 +4,86 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<link rel="stylesheet" href="https://head.js.org/dusk/umi.07525.css">
+<link rel="stylesheet" href="https://head.js.org/dusk/umi.e11ab.css">
+<script id="head-js">/* @head.js/snippet-init 0.5.1 */
+!function(){const n=window||__hlobal__;n.head=function(o,_,a){a||(a=_,_=o,o="head"),n[o][_]=a}}();
+/* @head.js/snippet-env 0.5.1 */
+!function(){const _={mode:"production",profile:"local",version:"0.0.1",
+agent:"{{ __agent__ }}",context:"/dusk"};head("env",_)}();
+/* @head.js/snippet-profile 0.5.1 */
+head("profile",{});</script>
 <script src="https://head.js.org/dusk/preload_helper.js"></script>
 </head>
 <body>
 <div id="root"></div>
-<script src="https://head.js.org/dusk/umi.07525.js"></script>
+<script src="https://head.js.org/dusk/umi.e11ab.js"></script>
+<script id="head-js-bridge">/* @head.js/snippet-emitter 0.5.0 */
+this.head=this.head||{},this.head.emitter=function(){function t(t,n){n=n||0;let e=t.length-n;const o=new Array(e)
+;for(;e--;)o[e]=t[e+n];return o}function n(){return this._events=Object.create(null),this}n.prototype.$on=function(t,n){
+const e=this;return(e._events[t]||(e._events[t]=[])).push(n),e},n.prototype.$once=function(t,n){const e=this
+;function o(){e.$off(t,o),n.apply(e,arguments)}return o.fn=n,e.$on(t,o),e},n.prototype.$off=function(t,n){const e=this
+;if(!arguments.length)return e._events=Object.create(null),e;const o=e._events[t];if(!o)return e
+;if(!n)return e._events[t]=null,e;let r,i=o.length;for(;i--;)if(r=o[i],r===n||r.fn===n){o.splice(i,1);break}return e},
+n.prototype.$emit=function(n){const e=this;let o=e._events[n];if(o){o=o.length>1?t(o):o;const n=t(arguments,1)
+;for(let t=0,r=o.length;t<r;t+=1)o[t].apply(e,n)}return e};const e=new n;return e.on=e.$on.bind(e),
+e.once=e.$once.bind(e),e.off=e.$off.bind(e),e.emit=e.$emit.bind(e),e}();
+/* @head.js/snippet-require 0.5.0 */
+this.head=this.head||{},this.head.require=function(){const e={};function t(t,n){if(e[t])return void e[t].push(n);let o,r
+;const l=document.getElementsByTagName("script");for(let e=0;e<l.length;e+=1){const n=l[e]
+;if(n.getAttribute("src")===t){o=n;break}}if(!n)return o;let i;function u(n,r){o.onerror=o.onload=null,clearTimeout(i)
+;const l=e[t];if(delete e[t],r&&"load"!==r.type&&o.parentNode&&o.parentNode.removeChild(o),l&&l.forEach((e=>e(r))),
+n)return n(r)}o||(r=!0,o=document.createElement("script"),o.timeout=30,o.src=t,o.async=!0),e[t]=[n],
+i=setTimeout(u.bind(null,void 0,{type:"timeout",target:o}),3e4),o.onerror=u.bind(null,o.onerror),
+o.onload=u.bind(null,o.onload),r&&document.head.appendChild(o)}const n="data-head-require-loading";function o(e,t){
+let o,r;const l=document.getElementsByTagName("link");for(let t=0;t<l.length;t+=1){const n=l[t]
+;if("stylesheet"===n.rel&&(n.href===e||n.getAttribute("href")===e)){o=n;break}}if(!t)return o;let i;function u(e,r){
+if(o.onerror=o.onload=null,o.removeAttribute(n),clearTimeout(i),r&&"load"!==r.type&&o.parentNode.removeChild(o),t(r),
+e)return e(r)}return o||(r=!0,o=document.createElement("link"),o.setAttribute(n,1),o.rel="stylesheet",o.href=e),
+o.getAttribute(n)?(i=setTimeout(u.bind(null,void 0,{type:"timeout",target:o}),3e4),o.onerror=u.bind(null,o.onerror),
+o.onload=u.bind(null,o.onload)):u(void 0,{type:"load",target:o}),r&&document.head.appendChild(o),o}
+const r=new RegExp("\\.css");return function(e,n,l){let i,u=0,d=0;function a(e){u-=1,0===u&&0===d&&n()}function c(e){
+d-=1,0===u&&0===d&&n()}for(let n=0;n<e.length;n+=1)i=e[n],r.test(i)?(u+=1,o(i,a)):(d+=1,t(i,c))}}();
+/* @head.js/snippet-bridge 0.5.0 */
+this.head=this.head||{},this.head.bridge=function(){function i(){this.registered={},this.initialized={},this.resolved={}
+}i.prototype._resolve=function(i){const[t,e="_"]=i.split("@"),s=this.initialized[t][e];let r=this.resolved[t].shift()
+;for(;r;)r(s),r=this.resolved[t].shift()},i.prototype.register=function(i,t){const[e,s="_"]=i.split("@")
+;this.registered[e]?this.registered[e][s]||console.warn("".concat(e,"@").concat(Object.keys(this.registered[e]).join(",")," detected. @").concat(s," will not register.")):(this.registered[e]=this.registered[e]||{},
+this.registered[e][s]=this.registered[e][s]||[],this.initialized[e]=this.initialized[e]||{},this.initialized[e][s]=null,
+this.resolved[e]=this.resolved[e]||[],t((t=>{t.then?(this.initialized[e][s]={__promis3r3fhack__:t},
+"_"!==s&&(this.initialized[e]._={__promis3r3fhack__:t})):(this.initialized[e][s]=t,"_"!==s&&(this.initialized[e]._=t)),
+this._resolve(i)})))},i.prototype._initialize=function(i){const[t,e="_"]=i.split("@")
+;return this.resolved[t]=this.resolved[t]||[],new Promise(((i,s)=>{if(this.initialized[t]){
+const s=this.initialized[t][e];if(s)i(s);else{const e=this.initialized[t]._
+;e?(console.warn("only the 1st ".concat(t,"@").concat(Object.keys(this.initialized[t]).join(",")," will register and resolve.")),
+i(e)):this.resolved[t].push(i)}}else this.resolved[t].push(i)}))},i.prototype.initialize=function(i){const t=[]
+;for(let e=0;e<i.length;e+=1)t.push(this._initialize(i[e]));return Promise.all(t).then((i=>{const t=[]
+;for(let e=0;e<i.length;e+=1){const s=i[e];s.__promis3r3fhack__?t.push(s.__promis3r3fhack__):t.push(s)}
+return Promise.resolve(t)}))},i.prototype.ready=function(i){const[t,e="_"]=i.split("@");if(this.initialized[t]){
+const i=this.initialized[t][e];if(i)return i;{const i=this.initialized[t]._
+;if(i)return console.warn("only the 1st ".concat(t,"@").concat(Object.keys(this.initialized[t]).join(",")," will register and resolve.")),
+i;throw new Error("check docs about ~await bridge.initialize~")}}
+throw new Error("check docs about ~await bridge.initialize~")},i.prototype.require=function(i,t,e){const{head:s}=window
+;this.register(i,(i=>{s.require(t,(()=>{e(i)}))}))};return new i}();
+/* @head.js/container-snippet 0.1.4 */
+this.head=this.head||{},this.head.container=function(){"use strict";function t(t,r){var e=Object.keys(t)
+;if(Object.getOwnPropertySymbols){var i=Object.getOwnPropertySymbols(t);r&&(i=i.filter((function(r){
+return Object.getOwnPropertyDescriptor(t,r).enumerable}))),e.push.apply(e,i)}return e}function r(r){
+for(var i=1;i<arguments.length;i++){var n=null!=arguments[i]?arguments[i]:{};i%2?t(Object(n),!0).forEach((function(t){
+e(r,t,n[t])
+})):Object.getOwnPropertyDescriptors?Object.defineProperties(r,Object.getOwnPropertyDescriptors(n)):t(Object(n)).forEach((function(t){
+Object.defineProperty(r,t,Object.getOwnPropertyDescriptor(n,t))}))}return r}function e(t,r,e){return(r=function(t){
+var r=function(t,r){if("object"!=typeof t||null===t)return t;var e=t[Symbol.toPrimitive];if(void 0!==e){
+var i=e.call(t,r||"default");if("object"!=typeof i)return i
+;throw new TypeError("@@toPrimitive must return a primitive value.")}return("string"===r?String:Number)(t)}(t,"string")
+;return"symbol"==typeof r?r:String(r)}(r))in t?Object.defineProperty(t,r,{value:e,enumerable:!0,configurable:!0,
+writable:!0}):t[r]=e,t}function i(t){var r=t.id,e=t.desc,i=void 0===e?"":e,n=t.materials,o=void 0===n?{}:n,c=t.$
+;return this.id=r,this.desc=i,this.materials=o,this.$=c,this}function n(){this.$={},this.$script={}}function o(){}
+return i.prototype.script=function(t,r){return this.$.script.call(this.$,this.id,t,r)},i.prototype.material=function(t){
+var r=arguments.length>1&&void 0!==arguments[1]?arguments[1]:"";return this.materials[t]||r},
+n.prototype.create=function(t){var e=this.id(t.id);if(e)return Object.assign(e.materials,t.materials),e
+;var n=new i(r(r({},t),{},{$:this}));return this.$[t.id]=n,n},n.prototype.id=function(t){return this.$[t]},
+n.prototype.script=function(t,r,e){if(!e){var i="".concat(t,"/").concat(r);return this.$script[i]||o}
+var n="".concat(t,"/").concat(r);this.$script[n]=e},new n}();
+</script>
 </body>
 </html>

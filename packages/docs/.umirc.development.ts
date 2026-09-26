@@ -7,7 +7,7 @@ export default defineConfig({
   // deployed under https://head.js.org/dusk/.
   base: '/',
 
-  publicPath: '/',
+  publicPath: '/dusk/',
 
   mfsu: false,
 });

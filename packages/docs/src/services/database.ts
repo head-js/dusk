@@ -2,7 +2,7 @@ export default [
   {
     uid: 'p-4k7m2x9q',
     template: {
-      name: 'p-aa',
+      name: 'p-dummy-F7QzWBzF',
       version: '1.0.0',
     },
     route: '/',
@@ -11,13 +11,13 @@ export default [
     layouts: {
       main: [
         {
-          xid: 'p-aa-dummy-image',
+          xid: 'p-4k7m2x9q-dummy-image',
           template: {
             name: 'c-dummyimage-wDk3dk3g',
             version: '1.0.0',
           },
           slots: {
-            src: 'https://dummyimage.com/640x360/1677ff/ffffff.png&text=p-aa',
+            src: 'https://dummyimage.com/640x360/1677ff/ffffff.png&text=p-dummy-F7QzWBzF',
           },
           script: '',
         },
@@ -35,22 +35,50 @@ export default [
     params: {},
     pathname: '/',
     layouts: {
-      menu: [],
-      toolbox: [],
-      composer: [
+      menu: [
         {
-          xid: 'p-composer-dummy-image',
+          xid: 'p-composer-menu',
           template: {
-            name: 'c-dummyimage-wDk3dk3g',
+            name: 'c-menu-Q6QSlCaj',
             version: '1.0.0',
           },
-          slots: {
-            src: 'https://dummyimage.com/640x360/52c41a/ffffff.png&text=p-composer-na3w8hpF',
-          },
+          slots: {},
           script: '',
         },
       ],
-      panel: [],
+      toolbox: [
+        {
+          xid: 'p-composer-toolbox',
+          template: {
+            name: 'c-toolbox-xxx',
+            version: '1.0.0',
+          },
+          slots: {},
+          script: '',
+        },
+      ],
+      composer: [
+        {
+          xid: 'p-composer-editor',
+          template: {
+            name: 'c-composer-d36zxB1z',
+            version: '1.0.0',
+          },
+          slots: {},
+          script: '',
+        },
+      ],
+      panel: [
+        {
+          xid: 'p-composer-panel',
+          template: {
+            name: 'c-panel-xxx',
+            version: '1.0.0',
+          },
+          slots: {},
+          script: '',
+        },
+      ],
     },
     actions: [],
   },

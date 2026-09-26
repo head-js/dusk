@@ -10,6 +10,7 @@
   "dependencies": {
     "@ant-design/icons": "5.5.2",
     "@head.js/snippet": "0.5.9",
+    "@head/container": "0.1.4",
     "@head/edge": "0.4.1",
     "@tailwindcss/typography": "0.5.9",
     "antd": "5.22.7",
